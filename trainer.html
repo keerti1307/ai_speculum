@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Speculum AI 💎 — Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">💎 Speculum AI</div>
+    <div class="user-area">
+      <span id="greetingText">Welcome!</span>
+      <button id="logoutBtn" class="small">Logout</button>
+    </div>
+  </header>
+
+  <main class="trainer-wrap">
+    <section class="trainer-card glass">
+      <!-- AI doll: change the content to <img src="your-avatar.png"> if you want an image avatar -->
+      <div id="doll" class="doll">🩵</div>
+
+      <div class="modes">
+        <button id="fitnessModeBtn">Start Fitness Mode 🧘‍♀️</button>
+        <button id="actingModeBtn">Start Acting Mode 🎭</button>
+      </div>
+
+      <div class="timer-area">
+        <div id="timerLabel" class="timer-label">Ready</div>
+
+        <!-- Circular progress -->
+        <svg id="timerSvg" width="140" height="140" viewBox="0 0 140 140">
+          <circle cx="70" cy="70" r="60" stroke="#e6f7ff" stroke-width="10" fill="none"></circle>
+          <circle id="progressCircle" cx="70" cy="70" r="60" stroke="#00c8ff" stroke-width="10" fill="none" stroke-linecap="round" transform="rotate(-90 70 70)"></circle>
+        </svg>
+
+        <div id="timerText" class="timer-text"></div>
+      </div>
+
+      <div id="instructionText" class="instruction">Choose a mode to start</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
